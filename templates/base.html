@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <title> Facture </title>
 
+
+  
+</head>
+<body>
+
+  
+
+
+
+
+
+
 </head>
 <body>
     <! -- header -- >
@@ -50,7 +62,7 @@
 
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"> Add client </a>
+                <a class="dropdown-item" href="{% url 'add-client' %}">Add client</a>
                 <a class="dropdown-item" href="#">Add admin </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Statistic</a>
@@ -64,6 +76,23 @@
       </nav>
     </header>
 
+    <div class="container">
+      <div class="wrapper">
+          <br>
+          {% for messages in  messages %}
+          <div class="alert {{message.tags}} alert-dismissible " role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {{message|safe}}
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  
+
+
+
 
     <! -- end header -- >
 <div class="container">
@@ -71,6 +100,25 @@
     {% endblock content %}
     
 </div>
+
+
+<! --footer -->
+
+<footer class="bg-light text-center text-white">
+
+    <! --copyright -->
+
+    <div class="text-center p-3 " style="background-color: rgba( 0,0, 0,0.2);">
+      Billing system © 2025 copyright:
+      <a href="https://Moon.com">MOON</a>
+    </div>
+
+    <! --endcopyright -->
+
+</footer>
+
+<! -- end footer -->
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

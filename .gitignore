@@ -1,0 +1,1 @@
+applications/ git rm --cached -r applications git add .

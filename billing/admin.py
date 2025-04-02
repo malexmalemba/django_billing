@@ -9,7 +9,7 @@ class AdminClient(admin.ModelAdmin):
 
     
 class AdminThefac(admin.ModelAdmin):
-    list_display = ('client','Eng_par','Total','client_date_time','Last_updated_date','Payer','Thefac_type','Commentaires')
+    list_display = ('client','Eng_par','Total','thefac_date_time','Last_updated_date','Payer','Thefac_type','Commentaires')
     
 
 admin.site.register (Client,AdminClient)
