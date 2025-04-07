@@ -1,11 +1,10 @@
+
 body{
-    background-color: blue;
-}body{
     margin: 0;
     padding: 0;
     font: 400 .875rem 'Open Sans', sans-serif;
     color: #bcd0f7;
-    background: #1A233A;
+    background: #3f007f;
     position: relative;
     height: 100%;
 }
@@ -31,7 +30,7 @@ body{
     margin: 1rem 0 0 0;
     padding: 1rem;
     line-height: 180%;
-    background: #1a233a;
+    background: #3f007f;
 }
 .thefac-container .thefac-details .thefac-num {
     text-align: right;
@@ -72,7 +71,7 @@ body{
     margin: 0 0 1rem 0;
     display: inline-block;
     padding: 1rem;
-    background: #1a233a;
+    background: #3f007f;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
@@ -107,7 +106,7 @@ body{
     color: #ffffff;
 }
 .client-table > tbody tr:hover {
-    background: #172033;
+    background: #2f71c1;
 }
 .client-table > tbody tr:nth-of-type(even) {
     background-color: #1a243a;

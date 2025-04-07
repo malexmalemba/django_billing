@@ -8,15 +8,15 @@
 <br><br>
 
 <div class ="row">
-    <a href="#" class="btn col-md-4 btn-primary">
-        Register a new thefac  <span class="badge text-bg-secondary"></span>
+    <a href="{% url 'add-thefac' %}" class="btn col-md-4 btn-primary">
+        Register a new facture  <span class="badge text-bg-secondary"></span>
     </a>
 
     <a href='#' class="col-md-4">
         <span class="badge text-bg-secondary"></span>
     </a>
 
-    <a href="{% url 'add-client '%}" class="btn col-md-4 btn-primary">
+    <a href="{% url 'add-client' %}" class="btn col-md-4 btn-primary">
           Register a new client  <span class="badge text-bg-secondary"></span>
     </a>
 
@@ -51,7 +51,7 @@
             <tr>
 
                 <th scope="row"> {{facture.pk}} </th>
-                <td> {{facture.client.Name}} </td>
+                <td> {{facture.client.name}} </td>
                 <td> {{facture.thefac_date_time}}</td>
                 <td> {{facture.total}}</td>
                 <td>
@@ -141,7 +141,7 @@
                 <h5 class="modal-title text-dark" id="sexampleModalLabel">Delete thefac</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times</span>
-                </button>
+                </bu0tton>
             </div>
             <div class="modal-body">
                 <form method="post">

@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path ('',views.HomeView.as_view(), name='home'),
-    path ('add-client',views.AddClientView.as_view(), name='add-client')
+    path ('add-client',views.AddClientView.as_view (), name='add-client'),
+    path ('add-thefac',views.AddThefacView.as_view (), name='add-thefac')
 ]

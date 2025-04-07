@@ -81,7 +81,7 @@ class Thefac (models.Model):
         verbose_name_plural = "Thefacs"
         
     def __str__ (self):
-        return f"{self.client.Name}_{self.client_date_time}"
+        return f"{self.client.Name}_{self.thefac_date_time}"
     
     
     @property
@@ -97,7 +97,7 @@ class Article (models.Model):
     author :allmoongood2024@gmail.com 
     """
     
-    client = models.ForeignKey (Client, on_delete=models.CASCADE)
+    thefac = models.ForeignKey (Client, on_delete=models.CASCADE)
     
     Name = models.CharField (max_length=32)
     
